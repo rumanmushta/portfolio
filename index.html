@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+  <script src="https://kit.fontawesome.com/dcee5ef514.js" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/1744f3f671.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <title>Ruman's Portfolio</title>
+</head>
+
+<body class="light-theme">
+  <div class="experience">
+    <canvas class="experience-canvas"></canvas>
+  </div>
+
+  <div class="preloader">
+    <div class="preloader-wrapper">
+      <div class="loading">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" asscroll-container>
+    <div class="asscrollbar">
+      <div class="asscrollbar__handle">
+        <div></div>
+      </div>
+    </div>
+
+    <div class="toggle-bar">
+      <div class="sun-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+          <path fill="currentColor"
+            d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm283-100q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-160Z" />
+        </svg>
+      </div>
+
+      <button class="toggle-button">
+        <div class="toggle-circle"></div>
+      </button>
+
+      <div class="moon-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+          <path fill="currentColor"
+            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="page-wrapper" asscroll>
+      <section class="hero">
+        <div class="hero-wrapper">
+          <div class="intro-text">Welcome to my portfolio!</div>
+
+          <div class="arrow-wrapper">
+            <!-- <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M480-362q-8 0-15-2.5t-13-8.5L268-557q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-373q-6 6-13 8.5t-15 2.5Z"
+                />
+              </svg> -->
+            <div class="chevrons">
+              <div class="chevrondown"></div>
+              <div class="chevrondown"></div>
+            </div>
+          </div>
+
+          <div class="hero-main">
+            <h1 class="hero-main-title">Ruman</h1>
+            <p class="hero-main-description">
+              Software Engineer and Web developer
+            </p>
+          </div>
+
+          <div class="hero-second">
+            <p class="hero-second-subheading">MY THREE.JS</p>
+            <p class="hero-second-description">P.O.R.T.F.O.L.I.O</p>
+            <!-- <p>YES</p> -->
+          </div>
+        </div>
+      </section>
+
+      <div class="first-move section-margin"></div>
+
+      <section class="first-section section left">
+        <div class="progress-wrapper progress-bar-wrapper-left">
+          <div class="progress-bar"></div>
+        </div>
+        <div class="section-intro-wrapper">
+          <h1 class="section-title">
+            <span class="section-title-text">Introduction</span>
+            <div class="section-title-decoration style1"></div>
+            <div class="section-title-decoration style2"></div>
+            <div class="section-title-decoration style3"></div>
+          </h1>
+          <span class="section-number">01</span>
+        </div>
+
+        <div class="section-detail-wrapper">
+          <!-- <h3 class="section-heading">About this project</h3>
+          <p class="section-text">
+            This project draws significant inspiration from bokoko33's
+            website. Working on this endeavor allowed me to explore various
+            facets of Three.js and Blender, becoming more proficient in both.
+            The outcome achieved closely resembles the original website, with
+            some touch of my own.
+          </p>
+          <button class="section-button">
+            <a href="https://bokoko33.me/" target="_blank">Bokoko33's Website →</a>
+          </button>
+          <button class="section-button">
+            <a href="https://twitter.com/bokoko33" target="_blank">Bokoko33's Twitter →</a>
+          </button> -->
+          <h3 class="section-heading">About Me</h3>
+          <p class="section-text">
+            Hello! I’m a software engineer with 4+ years of experience in web and mobile development. I
+            specialize in the MERN and MEVN stacks for building powerful web applications, and I use React Native to
+            create seamless mobile experiences. I’m committed to delivering high-quality, client-focused solutions that
+            meet your needs and exceed expectations. Let’s work together to turn your ideas into successful projects!
+          </p>
+          <!-- <button class="section-button">
+            <a href="/others/resume.pdf" target="_blank">My resume →</a>
+          </button> -->
+        </div>
+      </section>
+
+      <div class="second-move section-margin"></div>
+
+      <section class="second-section section right">
+        <div class="progress-wrapper progress-bar-wrapper-right">
+          <div class="progress-bar blue-background"></div>
+        </div>
+
+        <div class="section-intro-wrapper blue-text blue-border">
+          <h1 class="section-title blue-text blue-border">
+            <span class="section-title-text blue-text">Projects</span>
+            <div class="section-title-decoration style1 blue-border"></div>
+            <div class="section-title-decoration style2 blue-border"></div>
+            <div class="section-title-decoration style3 blue-background blue-border"></div>
+          </h1>
+          <span class="section-number blue-text">02</span>
+        </div>
+
+        <div class="section-detail-wrapper">
+          <p class="section-text">
+            <!-- Currently I am still studying, hence I will list some notable
+            course work here. I hope I am able to add more personal projects
+            here in the near future! -->
+          </p>
+          <h3 class="section-heading">Perk force</h3>
+          <p class="section-text">
+            I had the opportunity to contribute to the development of Perkforce, a platform designed to enhance employee
+            engagement through a range of customizable perks and rewards. My role involved working extensively with
+            modern web technologies to ensure a seamless and intuitive user experience. Utilizing my expertise in the
+            MERN stack, I helped build and optimize the platform's functionality, ensuring robust performance and
+            scalability. Additionally, my focus on responsive design and user-centric features contributed to the
+            platform’s sleek interface and efficient navigation, ultimately supporting Perkforce in delivering valuable
+            employee benefits with ease and efficiency.
+          </p>
+          <button class="section-button">
+            <a href="https://perkforce.com/" target="_blank">Perk force →</a>
+          </button>
+          <h3 class="section-heading">Evercare </h3>
+          <p class="section-text">
+            I played a key role in the development of the Evercare website, including its comprehensive admin panel and
+            mobile application. Utilizing my skills in the MERN stack and React Native, I contributed to creating a
+            robust and user-friendly platform that streamlines healthcare management. For the web application, I focused
+            on building a responsive and intuitive admin panel, enabling efficient management of healthcare services and
+            patient interactions. On the mobile side, I worked on developing a seamless and engaging experience for
+            users, ensuring accessibility and functionality across devices. My efforts were aimed at enhancing the
+            overall user experience and operational efficiency for Evercare, ultimately supporting their mission to
+            deliver exceptional healthcare services.
+          </p>
+          <button class="section-button">
+            <a href="https://www.yourevercare.com/" target="_blank">Evercare →</a>
+          </button>
+          <h3 class="section-heading">Glamate</h3>
+          <p class="section-text">
+            Glamate is a cutting-edge platform designed to enhance the beauty and wellness industry with its innovative digital solutions. The website offers a sleek, user-friendly interface where beauty professionals can connect with clients, manage appointments, and showcase their services seamlessly. Complementing the website, Glamate’s mobile app, developed using React Native, provides users with a smooth and intuitive experience on the go. Whether scheduling appointments or browsing for beauty services, the app ensures that users have a consistent and convenient experience, reflecting the platform’s commitment to excellence in both web and mobile environments.
+  
+  
+          </p>
+          <button class="section-button">
+            <a href="https://glamate.in/" target="_blank">Glamate →</a>
+          </button>
+        </div>
+      </section>
+
+      <div class="third-move section-margin"></div>
+
+      <section class="third-section section left">
+        <div class="progress-wrapper progress-bar-wrapper-left">
+          <div class="progress-bar blue-background"></div>
+        </div>
+        <div class="section-intro-wrapper blue-text blue-border">
+          <h1 class="section-title blue-text blue-border">
+            <span class="section-title-text blue-text">Testimonial</span>
+            <div class="section-title-decoration style1 blue-border"></div>
+            <div class="section-title-decoration style2 blue-border"></div>
+            <div class="section-title-decoration style3 blue-background blue-border"></div>
+          </h1>
+          <span class="section-number blue-text">03</span>
+        </div>
+
+        <div class="section-detail-wrapper testimonial">
+
+          <h3 class="section-text testimonial-title">
+            What my clients says about me
+          </h3>
+
+          <!-- 
+#### EDIT
+I built this slider when I first started to learn JS, you can rebuild it with more readable, simple and less code, I'm too lazy to update it, sorry :) 
+-->
+
+          <!-- 
+	use the left and right arrow keys on your keyboard or just swipe left and right on your smart phone to interact with the slider
+-->
+
+          <section id="testim" class="testim">
+            <!--         <div class="testim-cover"> -->
+            <div class="wrap">
+
+              <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+              <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+              <ul id="testim-dots" class="dots">
+                <li class="dot active"></li><!--
+                      -->
+                <li class="dot"></li><!--
+                      -->
+                <li class="dot"></li><!--
+                      -->
+                <li class="dot"></li><!--
+                      -->
+                <li class="dot"></li>
+              </ul>
+              <div id="testim-content" class="cont">
+
+                <div class="active">
+                  <div class="img">
+                    <img
+                      src="data:image/webp;base64,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"
+                      alt="" />
+                  </div>
+                  <h2>Daniel Steven</h2>
+                  <p>Great job! I highly recommend for webdesign and development job that you have. I've worked with him
+                    numerous times. He never disappoints.</p>
+                </div>
+
+                <div>
+                  <div class="img"><img
+                      src="data:image/webp;base64,UklGRnAEAABXRUJQVlA4IGQEAACQGgCdASpkAGQAPqVEm0mmI6IhLlaMIMAUiWMAx6DZzu3ZkQ0Xiy5PkbHVCsMpfEELErlDljQ1ViykBtLET+OZQqjkTGv7UR8DQJfMxL0X5RBqK9VOmCgEEwKV1QxC5hIpB29yG9oYvonEX1fQ1C33/JLTNRosWB6+ylup1UcByLQUVfY/DJX0Lh9zkJXd5Mo/tRQ2qH+7/8jkubWN5qHhV0aodY+H23TKoTHuolDeHnXpKuJdIEAPRF0FDjQfO+HnOzUUnZutcKww3K7W/xX/ktyK1GMpeJ0I7ydWAAD+96mSlRPDL840SGe7xcKmGC8k9cbhqd93yy2xHxkkrI/EUBLvTh7v98xSMJfLv6z/aWIY9QyLdlOGhRvV4cYEKjT+0FSQp/6J8fkpD27iGZiz/HDpzlrdn/GcZhFHVhIQJzxz4owOVIpTdVqBNYQio1zT1999UT8V+yIBGck7W3OWpvx2D/qtT5ls9QUM93Qo5j6EXTN6DJ0ujQCPOu6VPmYQ39sUX96BOXpBYODoIFkSPyhRLO8GolGCCuyKPyrUNujjV1WNlJNGIryqitpJEB9vrCNkY0sjejpWrM78KwbAr0aEyKAtfvxWHl+AKsXbhSCt9de57HnyFYAygF1+IxV7+1/YZxRuhysQkX9ocZcQm+WqIPISMCKPb00ciMDOti3P31EinKNFmVbTeFFZwNq1jEQgXbYBnY3ERIGqWd0U/nW0qVR8shm6rDrCx2v+lprsm91m6QFjk1LYzFYO/8JgWVojftrWMkI4QSNFrtW40Ax0fSPTOrxqe7qEeC2BD2g3EsYJM4PyUGzqxtLvfpzwsNtAYBGu6ZtDyiXVQoKhcv8vTkyi3KhnxlPoGA4hvI8XSE0vkkZH51qjQJalfbSSxQM287lAYvz6udQiU3leZAQCEARG+LeJO+N3wZXZGvgnuW/ViMcjwp1QDUiBBNBqoqIuNfz9E46XFSLTEhapqLZFHjBHXj339+nRBZicfRTsO2tnL4oOEQMOXofsVy2YF9DvYLLk0aBqkflqWm34LuQl3Yyx0jVdg28euiiPPVZAZm+C5cebUYX0S9qvMdIR8UtFfkLC/2z1qg8Wkdh/TskaYsWrN5NRh7lVvDwb8kPq0llA6CqAidQJt8eo5QGAQ5KdL2lDHLGLFD9cjTGlNhmkt3fpcfKhw80VniohSy0WeUxzdXv5zCfuCQ8nbdtz0bmuj839O7gBe7dt0zCCzyI+jShedIU7RWUT6AfAttIdOIyZTMCrgTcfpVm08PQ6fGFY1WUSKmAXAgiXWd5uYB2pGFHnG93kq5yKNjL+HCl8Y/Ar/BnhXJO9oyESKwzWjt5yzlBoOIIVezqk11c10fqlDvnx9Db4KWKXLZZaMFlhZzbfh42lysKgP4exBjnUaCOO63XzC5wVLYFso0eD2yLHjBiHFRQj49kBz5LYgcbFtPRpYWFOE071So71RmWoBaKy/MmGpeullIS2Ci2kF7UAAA=="
+                      alt=""></div>
+                  <h2>Itrowbridge</h2>
+                  <p>Great communication and flexibility! He was always quick to respond, super polite, and able to provide advice and be flexible to my changing ideas.</p>
+                </div>
+
+                <div>
+                  <div class="img"><img
+                      src="data:image/webp;base64,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"
+                      alt="" /></div>
+                  <h2>Esther</h2>
+                  <p class="">It was my pleasure to work with such a professional web developer who knows how to work
+                    with a non technical person. Loved the end results.</p>
+                </div>
+
+                <div>
+                  <div class="img"><img
+                      src="data:image/webp;base64,UklGRsIEAABXRUJQVlA4ILYEAADwGwCdASpkAGQAPmEskkYkIq6hKJYsAdAMCWUA00XxkEGRF/r+JeYHwh0xM0ryJfWeoNHjhFZ9nP+Wr3zyU3q9UU8VzmgmhXnd2Rcp+MbZlaW1sdhc8r84/tke/FXzNoelYqGP+NMZOuhSVhS8oV3dvI8TVOjP8X8bRN26l1O+vxnogCYvaLwfuu5PiglZEa7pJVzm06Wz0nhZLr2ivq/zbFtuz38NDTPXvhbZe4ZGSte4yjz1ztp9ecbnche4WxXGG7YgdJS2PJiJIMABZP878jBtylTDkTW812GbbJRFhIvdCYmTE0owAP7v+dt3dvPwt3otOJq1BnWuC3TrI4CiLcTYs4gVDs5ddEYcyGIPd2rQhuaGj+epYhvH+KrqT3Hz4tfqy3MUqSSjnGn0aL2kICtGBN05vz8JNInzMUunQA7F5AZcVK5duOMrI0gOMliiTUD8BaLNERUM8tjEjXKjTEhlaNHoGBpN5A3z0GMGrnliQGzgrVoeCns3KoHKfcOVRW0EA1pqAlV+MPxXlfUWuA3//UhFp3nPuvbQHeCGv9ZmLjNB3xxUHwxxY6schU5tCxQEp7yMNZx3mp0YaVVuXg1XpN2KvT6j7wVJm3o6aO6Iwqsq4NC23QdVyQnaE9bUBxI31TS6HX1Ihy8PNN+nK3znk6WpTTHIWakTW8ZlJFlu3S8aA9sjpf98WXH7TJRrc6G5qhnI4Mfmc0SGY/e42zSUOJ1AZQ6T2Y/2WqVWLPx3jqViI7iNJvNSekv47ZcPxP/6gGbK9/S6/Vj5+6hSXfl/WE4bER9IXKM340k16aoSu4t/Y2vMdtRK78fX3Z8PFgUnXYtztxQXU5HKP9vpFEMW3r2qeIJ7UgrDjeuTO6uD0g4VvJYJE9G1be6pvZa+WoxW9waLLivkNevOSvG7/48WBTDJ2lg1BdVsIaRySO9eHtFoxs9fhVC7zViYmFqMNgnm8dh/ILQh7/GTrB3cQYP0o+hcLOghIHubGdWBz3kaYMtQh5gHRq1o7L+YE0U4ZhIujkgPJuDN5bnKqn6EFCoflD5p0t6+hxmpEw8UDKNKAjy2dVtZeQ+IgKPXA6hkDUj7mSpl44g6QFBBn/bCZYdnrLIwwGUJ/LST0J1IwTkekNI3X8enDUmLOfCX/4fAQZ0aFEBTk/abig3PPshyLPOGQ/n/qsw4O6oayDoignVps+d0ovonNP8v/VYGoZaakd3b1MtYgzLUCw1D7gDueJbJm3h0y2WyMFd8CNOgVcxKXYJbdxG2HXuIThCu0GdarKUWavDiJG0fuOoxuo+uDB6TKDGIxaN4/XYknh5u74rsMnPnsM/bN9YfZNKXSsr1ic3EqFdc0CjkG6+//mbUdP8U9s8v2EbBOIZOyXjBCzRWqR70h5c2hnWjmdYd/N+H5E4TX0UDKIL3Ns6O5ycOsh4ZNs/24e9BTxG5MunSqgPacjkTUCdSo8B7wxYRO/NTtceibB9hvT1RpvSjJAhmQSWmllAblhmJLRSV247cf1Az/ik+xbhDu5Q2l8JotrIYuLBkaHjAD2oah896Q6VZ7JTNqo9PLMMjUW9wyFiBuJPiqvMrcsd+NMBpBYhOqczNUUmQAAA="
+                      alt=""></div>
+                  <h2>Jacknaan</h2>
+                  <p>He is a very good communicator and makes sure that he is giving you the best website and product to make your money worth it. Highly recommend.</p>
+                </div>
+
+                <div>
+                  <div class="img"><img
+                      src="data:image/webp;base64,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"
+                      alt="" /></div>
+                  <h2>Natacha</h2>
+                  <p>He is amazing communication was excellent i will continue to business with him. He is very talented and works hard for his clients to meet their satisfaction.</p>
+                </div>
+
+              </div>
+
+            </div>
+            <!--         </div> -->
+          </section>
+
+
+
+        </div>
+      </section>
+
+      <div class="fourth-move section-margin"></div>
+
+      <section class="fourth-section section right">
+        <div class="progress-wrapper progress-bar-wrapper-right">
+          <div class="progress-bar blue-background"></div>
+        </div>
+        <div class="section-intro-wrapper blue-text blue-border">
+          <h1 class="section-title blue-text blue-border">
+            <span class="section-title-text blue-text">Contact Me</span>
+            <div class="section-title-decoration style1 blue-border"></div>
+            <div class="section-title-decoration style2 blue-border"></div>
+            <div class="section-title-decoration style3 blue-background blue-border"></div>
+          </h1>
+          <span class="section-number blue-text">04</span>
+        </div>
+
+        <div class="section-detail-wrapper">
+          <h3 class="section-heading">Contact Me</h3>
+          <p class="section-text">
+            I’d love to hear from you! Whether you have a project in mind, a question, or just want to connect, feel
+            free to reach out using the form below or through my email. Let’s start a conversation and explore how we
+            can work together!
+          </p>
+
+          <div class="contact-form">
+            <form action="" id="contact-form" method="post">
+              <h2>Send Message</h2>
+              <div class="input-box">
+                <input type="text" required="true" name="" id="name">
+                <span>Full Name</span>
+              </div>
+              
+              <div class="input-box">
+                <input type="email" required="true" name="" id="email">
+                <span>Email</span>
+              </div>
+              
+              <div class="input-box">
+                <textarea required="true" name="" id="message"></textarea>
+                <span>Type your Message...</span>
+              </div>
+              
+              <div class="input-box">
+                <input type="submit" value="Send" name="">
+              </div>
+            </form>
+            <p id="responseMessage"></p>
+          </div>
+
+
+          <ul class="contact-button-wrapper">
+            <li class="icon github">
+              <span class="tooltip">Github</span>
+              <span><a href="https://github.com/oscarqjh" target="_blank"><i class="fa-brands fa-github"></i></a></span>
+            </li>
+            <li class="icon linkedin">
+              <span class="tooltip">Linkedin</span>
+              <span><a href="https://www.linkedin.com/in/oscarqian/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a></span>
+            </li>
+            <li class="icon gmail">
+              <span class="tooltip">Email: rumanu.dev@gmail.com</span>
+              <span><a href="mailto:oscar.jh9@gmail.com" target="_blank"><i
+                    class="fa-regular fa-envelope"></i></a></span>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+  <script type="module" src="/testimonial.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+ <script type="text/javascript"
+ src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+  <script type="module" src="/contact-form.js"></script>
+  <!-- <script src="/backend.js"></script> -->
+
+</body>
+
+</html>
